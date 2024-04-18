@@ -1,0 +1,154 @@
+<html>
+<head>
+<title> That's My Type </title>
+
+<style>
+body {background-image: url('pink.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%; text-align: center; font-size:30px; font-family: Courier New, Monospace}
+div {background-color: #88c7dc; margin: 5px; border-radius: 25px; padding: 2px;}
+p {font-family: Georgia, serif; text-align: center; font-size: 20px; required}
+input {text-align: center;}
+button {text-align: center; font-size:30px; font-family: Courier New, Monospace; border-radius: 15px; background-color: 88c7dc}
+</style>
+
+<script>
+function test ()
+{
+var fname=document.getElementById("fname").value;
+var gen=document.getElementById("gen").value;
+var fu=document.getElementById("fu").value;
+var me=document.getElementById("me").value;
+var ne=document.getElementById("ne").value;
+var ha=document.getElementById("ha").value;
+var ko=document.getElementById("ko").value;
+var jo=document.getElementById("jo").value;
+var ol=document.getElementById("ol").value;
+var ji=document.getElementById("ji").value;
+
+localStorage.setItem("fname",fname);
+localStorage.setItem("gen",gen);
+localStorage.setItem("fu",fu);
+localStorage.setItem("me",me);
+localStorage.setItem("ne",ne);
+localStorage.setItem("ha",ha);
+localStorage.setItem("ko",ko);
+localStorage.setItem("jo",jo);
+localStorage.setItem("ol",ol);
+localStorage.setItem("ji",ji);
+}
+
+</script>
+
+</head>
+
+<body>
+<b> What's your type? </b>
+<br>
+<br>
+<form>
+<div>
+<p>
+Full Name: <input type="text" id="fname" name="fname" placeholder="Jeromy Batac" ><br>
+</p>
+</div>
+<br>
+
+
+
+<div>
+<p>
+Gender <br>
+<input type="radio" id="gen" name="gen" value="gen">
+<label for="gender"> Male </label><br>
+<input type="radio" id="gen" name="gen" value="gen">
+<label for="gender"> Female </label><br>
+<input type="radio" id="gen" name="gen" value="gen">
+<label for="gender"> Other </label><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+How old are you? <br>
+ <input type="text" id="fu" name="fu" placeholder="100"><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Do you prefer mestizo/mestiza over moreno/morena? <br>
+<input type="radio" id="me" name="me" value="me">
+<label for="gender"> Mestizo/Mestiza </label><br>
+<input type="radio" id="me" name="me" value="me">
+<label for="gender"> Moreno/Morena </label><br>
+<input type="radio" id="me" name="me" value="me">
+<label for="gender"> Does not matter... </label><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Do you like people who are nerdy, sporty, or artisic? <br>
+<input type="radio" id="ne" name="ne" value="ne">
+<label for="gender"> Nerdy </label><br>
+<input type="radio" id="ne" name="ne" value="ne">
+<label for="gender"> Sporty </label><br>
+<input type="radio" id="ne" name="ne" value="ne">
+<label for="gender"> Artistic </label><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Preferred height? <br>
+ <input type="text" id="ha" name="ha" placeholder="5'11"><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+What nationality? <br>
+ <input type="text" id="ko" name="ko" placeholder="Filipino"><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Preferred partner's job? <br>
+ <input type="text" id="jo" name="jo" placeholder="P-POP Idol"><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Age <br>
+<input type="radio" id="ol" name="ol" value="ol">
+<label for="gender"> Older </label><br>
+<input type="radio" id="ol" name="ol" value="ol">
+<label for="gender"> Younger </label><br>
+<input type="radio" id="ol" name="ol" value="ol">
+<label for="gender"> Same Age </label><br>
+</p>
+</div>
+<br>
+
+<div>
+<p>
+Someone who perfectly fits your ideal type? <br>
+ <input type="text" id="ji" name="ji" placeholder="HORI7ON Jeromy"><br>
+</p>
+</div>
+<br>
+
+<input type="submit" value="Submit" onclick="test()">
+
+
+</form>
+</body>
+</html>
